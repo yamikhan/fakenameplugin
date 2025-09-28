@@ -1,8 +1,21 @@
 name: FakeName
-api-version: 1.21.8
-description: A plugin to change player names in-game.
-api: 1.21.8
-version: 1.0-SNAPSHOT
+version: 1.0.0-SNAPSHOT
 main: me.yamikingg.fakename.FakeName
-author: Yamikingg
-
+api-version: 1.21.8
+api:
+  - 1.21.8
+commands:
+  fakename:
+    description: Manage fake names
+    usage: /<command> <set|remove|list> [player] [name]
+    permission: fakename.use
+permissions:
+  fakename.set:
+    description: Set fake names
+    default: op
+  fakename.remove:
+    description: Remove fake names
+    default: op
+  fakename.list:
+    description: List fake names
+    default: op
